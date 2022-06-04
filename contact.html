@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheets/contact.css">
+        <link rel="stylesheet" href="./stylesheets/samecode.css">
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <title>CONTACT form |OnlineBazzar.com</title>
+</head>
+
+<body>
+    <div class=header16>
+        <div class="web_header12">
+            <!-- ---logo--- -->
+            <div class="logo12">
+                <h2><a href="" class="logo_name12">Online Bazzar</a></h2>
+            </div>
+            <!-- ---search--- -->
+            <div class="search12">
+                <input type="text" class="search_bar12" placeholder="Search.....">
+                <button class="btn12"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!-- ---icons--- -->
+            <div class="icons_of_web12">
+                <ul class="set12">
+                    <li class="icon1_12"><a href="./index.html">HOME</a></li>
+                    <li class="icon2_12"><a href="./product.html">PRODUCT <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="warp12">
+                            <li class="open12"><a href="./product.html">CUSTOMIZE JWELLERY <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <ul class="wap_li12">
+                                    <li><a href="./product.html">LOCKETS</a></li>
+                                    <li><a href="./product.html">BANGELS</a></li>
+                                    <li><a href="./product.html">RINGS</a></li>
+                                    <li><a href="./product.html">EARINGS</a></li>
+                                    <li><a href="./product.html">BRACLETS</a></li>
+                                    <li><a href="./product.html">COTA PINS</a></li>
+                                    <li><a href="./product.html">CUFFLINKS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./product.html">CUSTOMIZE CLOCKS</a></li>
+                            <li><a href="./product.html">CUSTOMIZE SHIRTS</a></li>
+                        </ul>
+                    </li>
+                    <li class="icon3_12"><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="left_side12">
+                <div class="account12">
+                    <h2 class="logo_account12"><i class="fa-solid fa-user logo_account12"></i></h2>
+                    <div class="account_porfile12 ">
+                        <div class="close_profile12">
+                            <h2 onclick="close()"><i class="fa-solid fa-xmark"></i></h2>
+                        </div>
+                        <div class="profile_logo12">
+                            <p>G</p>
+                        </div>
+                        <hr>
+                        <a href="" class="btncc12">LOGIN</a>
+                        <a href="" class="btncc12">LOGOUT</a>
+                    </div>
+                </div>
+                <div class="cart12">
+                    <h2><a href="./cart.html" style="color: black;"><i class="fa-solid fa-cart-shopping"></i></a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact16">
+        <h3>Contact Form</h3>
+
+        <div class="container">
+            <form>
+                <label for="fname">First Name</label>
+                <input class="input16" type="text" required id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input class="input16" type="text" required id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="Province">Province</label>
+                <input class="input16" type="text" required id="Province" name="Province" placeholder="Your Province ">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" required placeholder="Write something.." style="height:200px"></textarea>
+
+                <button class="input16 btn17" onclick="pushdata()">submit</button>
+            </form>
+        </div>
+    </div>
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="./index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="./product.html">product</a></li>
+                    <li class="list-inline-item"><a href="./contact.html">contact</a></li>
+                    <li class="list-inline-item"><a href="./cart.html">Cart</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Online Bazzar © 2022</p>
+            </footer>
+        </div>
+</body>
+<script src="./javascript/contact.js"></script>
+<script src="https://kit.fontawesome.com/f3f40a4ab9.js" crossorigin="anonymous"></script>
+
+</html>
